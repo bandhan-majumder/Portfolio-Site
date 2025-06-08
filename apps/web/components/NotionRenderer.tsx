@@ -6,20 +6,10 @@ export const BlogRender = ({ recordMap }: { recordMap: any }) => {
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
 
-  /*cl
-  // TODO: add custom components
-  const components = useMemo(
-    () => ({
-      
-    }),
-    []
-  );
-  */
-
   return (
     <NotionRendererLib
       bodyClassName="text-base sm:text-lg"
-      className={"dark:!bg-[#1a1919]"}
+      className={"dark:!bg-[#292828]"}
       darkMode={!isDarkMode}
       disableHeader
       fullPage

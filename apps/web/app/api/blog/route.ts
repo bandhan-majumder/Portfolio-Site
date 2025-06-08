@@ -1,7 +1,7 @@
 "use server";
 
 import { NextResponse } from "next/server";
-import { createBlog, getAllBlogs, updateBlog } from "../../../lib/utils";
+import { createBlog, deleteBlog, getAllBlogs, updateBlog } from "../../../lib/utils";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../../lib/auth";
 
@@ -69,6 +69,33 @@ export async function GET(request: Request) {
   return NextResponse.json({
     allBlogs,
     totalCount
+  }, {
+    status: 200,
+  });
+}
+
+export async function DELETE(request: Request) {
+  const session = await getServerSession(authOptions);
+
+  if (!session || !session.user || !session.user.admin) {
+    return NextResponse.json("Unauthorized", {
+      status: 401,
+    });
+  }
+  const data = await request.json();
+  if (!data.notionDocsId) {
+    return NextResponse.json("Notion Docs ID is required", {
+      status: 400,
+    });
+  }
+  const updatedBlog = await deleteBlog(data.notionDocsId);
+  if (!updatedBlog || !updatedBlog.id) {
+    return NextResponse.json("Failed to delete blog", {
+      status: 500,
+    });
+  }
+  return NextResponse.json({
+    blogId: updatedBlog.id,
   }, {
     status: 200,
   });

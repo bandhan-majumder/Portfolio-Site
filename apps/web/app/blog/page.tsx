@@ -6,7 +6,6 @@ import SearchBar from '../../components/SearchBar'
 function page() {
     return (
         <div className='w-full h-full'>
-            <Appbar />
             <div className='text-[#737881] text-xl text-center mt-10 mx-auto'>
                 <p>I write blogs about various topics.</p>
                 <p>This includes the things I learn, explore and find exciting.</p>

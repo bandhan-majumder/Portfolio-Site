@@ -104,3 +104,16 @@ export async function createBlog(data: IBlogDetails) {
     }
 }
 
+export async function deleteBlog(notionDocsId: string) {
+    try {
+        const blog = await db.blogs.delete({
+            where: {
+                notionDocsId
+            },
+        });
+
+        return blog;
+    } catch (e: any) {
+        throw new Error("Error updating blog:", e);
+    }
+}

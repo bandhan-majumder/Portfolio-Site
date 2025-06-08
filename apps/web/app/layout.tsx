@@ -5,6 +5,8 @@ import "@repo/tailwind-config/styles";
 import { Providers } from "../components/Providers";
 // core styles shared by all of react-notion-x (required)
 import "react-notion-x/src/styles.css";
+import { Appbar } from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,7 +32,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-neutral-50 dark:bg-[#292828] overflow-x-hidden antialiased`}>
         <Providers>
+          <Appbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
