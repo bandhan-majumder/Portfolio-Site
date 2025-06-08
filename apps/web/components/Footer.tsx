@@ -40,7 +40,7 @@ const Footer = () => {
             <Link target="_blank" href="https://github.com/bandhan-majumder/" className="hover:text-gray-300 text-sm sm:text-base">
               <Github />
             </Link>
-            <Link target="_blank" href="https://linkedin.com/bandhan-majumder" className="hover:text-gray-300 text-sm sm:text-base">
+            <Link target="_blank" href="https://www.linkedin.com/in/bandhan-majumder/" className="hover:text-gray-300 text-sm sm:text-base">
               <Linkedin />
             </Link>
           </div>
