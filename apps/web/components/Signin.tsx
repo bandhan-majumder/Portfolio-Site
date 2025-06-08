@@ -8,10 +8,7 @@ const Signin = () => {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col text-center">
           <h2 className="font-semibold text-3xl md:text-4xl tracking-tighter text-[#a79bcc]">
-            Welcome to{" "}
-            <div className="font-bold bg-[#7D68BF] bg-clip-text text-transparent tracking-wider mt-2">
-              THE GAUDA TIMES
-            </div>
+            Welcome
           </h2>
         </div>
         <div className="flex flex-col gap-4">

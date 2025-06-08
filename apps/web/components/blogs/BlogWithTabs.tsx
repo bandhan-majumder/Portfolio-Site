@@ -104,7 +104,7 @@ export function HomeBlogs() {
             <div className="flex justify-between w-full max-w-4xl mt-10">
                 <div className="flex flex-col justify-between">
                     <h1 className="text-2xl md:text-4xl font-bold text-white">Blogs</h1>
-                    <p className="text-gray-400 mt-2 text-sm md:text-base">Visit blogs from the Gauda Times</p>
+                    <p className="text-gray-400 mt-2 text-sm md:text-base">Visit blogs written by me!</p>
                 </div>
                 <div>
                     <Select onValueChange={(e) => {

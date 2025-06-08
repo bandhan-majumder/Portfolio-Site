@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "THE GAUDA TIMES",
-  description: "because everything has a story",
+  title: "Bandhan Majumder",
+  description: "portfolio of Bandhan Majumder, a computer science enthusiast and open source contributor.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-neutral-50 dark:bg-[#16161d] overflow-x-hidden antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-neutral-50 dark:bg-[#000000] overflow-x-hidden antialiased`}>
         <Providers>
           {children}
         </Providers>

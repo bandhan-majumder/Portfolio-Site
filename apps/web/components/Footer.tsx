@@ -28,25 +28,14 @@ const Footer = () => {
               </button>
             </div>
           </div>
-
-          <div className="w-24 h-24 sm:w-32 sm:h-32 relative">
-            <Image
-              src="/about.jpg"
-              alt="The Gauda Times Logo"
-              fill
-              sizes="(max-width: 640px) 6rem, 8rem"
-              style={{ objectFit: "contain" }}
-              className="rounded-full border-2 border-gray-600"
-            />
-          </div>
         </div>
 
         <div className="mb-6 sm:mb-8 text-center md:text-left">
           <div className="text-4xl sm:text-6xl md:text-8xl font-bold text-gray-100 mb-0 sm:mb-2 leading-tight">
-            THE
+            I'M
           </div>
           <div className="text-4xl sm:text-6xl md:text-8xl font-bold text-gray-100 relative leading-tight">
-            GAUDA TIMES
+            BANDHAN MAJUMDER
             <div className="absolute right-0 md:-right-4 top-full md:top-0 md:bottom-0 flex flex-col justify-center pt-2 md:pt-0">
               <div className="space-y-1">
                 <div className="h-1 w-full md:w-64 bg-red-500"></div>
@@ -62,26 +51,8 @@ const Footer = () => {
             <Link target="_blank" href="https://x.com" className="hover:text-gray-300 text-sm sm:text-base">
               <Twitter />
             </Link>
-            <Link target="_blank" href="https://facebook.com" className="hover:text-gray-300 text-sm sm:text-base">
-              <Facebook />
-            </Link>
-            <Link target="_blank" href="https://github.com/bandhan-majumder/GAUDA-TIMES" className="hover:text-gray-300 text-sm sm:text-base">
-              <IoLogoWhatsapp size={23} />
-            </Link>
-            <Link target="_blank" href="https://instagram.com" className="hover:text-gray-300 text-sm sm:text-base">
-              <Instagram />
-            </Link>
-            <Link target="_blank" href="https://github.com/bandhan-majumder/GAUDA-TIMES" className="hover:text-gray-300 text-sm sm:text-base">
-              <FaTelegramPlane size={23} />
-            </Link>
-            <Link target="_blank" href="https://github.com/bandhan-majumder/GAUDA-TIMES" className="hover:text-gray-300 text-sm sm:text-base">
+            <Link target="_blank" href="https://github.com/bandhan-majumder/" className="hover:text-gray-300 text-sm sm:text-base">
               <Github />
-            </Link>
-          </div>
-
-          <div className="mb-2 sm:mb-0 order-3 sm:order-2">
-            <Link href="/legal" className="hover:text-gray-300 text-sm sm:text-base">
-              made with ❤️ by Bandhan
             </Link>
           </div>
 
@@ -92,7 +63,7 @@ const Footer = () => {
               </div>
             </Link>
             <div className="text-xs sm:text-sm text-gray-400 order-2 sm:order-3">
-              THE GAUDA TIMES © 2025
+              BANDHAN MAJUMDER © 2025
             </div>
           </div>
         </div>

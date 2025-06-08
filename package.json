@@ -1,5 +1,5 @@
 {
-  "name": "gauda-times",
+  "name": "my-website",
   "private": true,
   "scripts": {
     "build": "turbo run build",

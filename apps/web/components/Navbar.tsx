@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Button } from "@repo/ui";
 import { signIn } from "next-auth/react";
 import { useSession } from "next-auth/react";
-import Image from "next/image";
 // import { ModeToggle } from "./ModeToggle";
 import { useRouter } from "next/navigation";
 import UserAccountDropDown from "./UserAccountDropDown";
@@ -16,15 +15,8 @@ export const Appbar = () => {
     <nav className="sticky mx-auto wrapper top-0 z-50 flex items-center gap-2 py-6 w-full">
       <div className="flex w-[90vw] justify-between mx-auto shadow-lg shadow-neutral-600/5 backdrop-blur-lg border border-gray-600 p-3 rounded-2xl md:w-[50vw]">
         <Link href={"/"} className="flex items-center gap-4 cursor-pointer">
-          <Image
-            src={'/about.jpg'}
-            alt="Logo"
-            width={300}
-            height={200}
-            className="rounded-full size-10"
-          />
           <span className="text-lg md:text-2xl font-bold tracking-tight text-[#686597] text-foreground hidden md:block">
-            The Gauda Times
+            Bandhan Majumder
           </span>
         </Link>
 
