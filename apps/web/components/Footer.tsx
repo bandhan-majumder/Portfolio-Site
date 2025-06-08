@@ -8,13 +8,13 @@ import { handleCopyEmail } from "../lib/copyClipBoard";
 const Footer = () => {
 
   return (
-    <footer className="bg-[#382b29] py-8 sm:py-12 px-4 text-gray-100">
+    <footer className="py-8 sm:py-12 px-4 text-gray-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-xl mb-4 font-semibold">
           Bandhan Majumder
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-10">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-10 mt-10">
           <div className="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 w-full md:w-auto mb-6 md:mb-0">
             <div className="flex flex-grow sm:flex-grow-0 max-w-full">
               <div className="flex items-center px-2 sm:px-4 py-2 border border-gray-600 rounded-l truncate">
@@ -52,6 +52,37 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="w-full h-auto flex items-center justify-center overflow-hidden">
+       <div className="w-full h-auto flex items-center justify-center overflow-hidden px-2">
+      <div className="text-center my-5 w-full">
+        <h1
+          className="
+            text-[4rem] 
+            xs:text-[5rem] 
+            sm:text-[6rem] 
+            md:text-[8rem] 
+            lg:text-[12rem] 
+            xl:text-[16rem] 
+            2xl:text-[20rem]
+            font-black 
+            leading-none 
+            tracking-tight 
+            select-none 
+            font-sans
+            w-full
+            break-all
+            sm:break-normal
+          "
+          style={{
+            color: 'transparent',
+            WebkitTextStroke: '1px rgba(255, 255, 255, 0.1)',
+          }}
+        >
+          bandhan
+        </h1>
+      </div>
+    </div>
+    </div>
     </footer>
   );
 };

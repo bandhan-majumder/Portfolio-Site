@@ -6,14 +6,9 @@ const Signin = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="flex flex-col gap-12">
-        <div className="flex flex-col text-center">
-          <h2 className="font-semibold text-3xl md:text-4xl tracking-tighter text-[#a79bcc]">
-            Welcome
-          </h2>
-        </div>
         <div className="flex flex-col gap-4">
           <div
-            className="w-full flex gap-2 p-4 font-medium md:text-lg rounded-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer bg-gradient-to-b from-purple-400 to-blue-900 text-white justify-center items-center"
+            className="w-full flex gap-2 p-4 font-medium md:text-lg rounded-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer bg-[#7A4D44] text-white justify-center items-center"
             onClick={async () => {
               await signIn("google");
               router.push("/");
