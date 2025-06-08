@@ -15,8 +15,8 @@ function Page() {
   };
 
   return (
-    <div className='min-h-screen flex flex-col items-center gap-4 p-4 bg-[#16161D]'>
-      <div className='text-3xl md:text-4xl font-bold text-[#665499] underline decoration-[#665499] decoration-4'>
+    <div className='min-h-screen flex flex-col items-center gap-4 p-4'>
+      <div className='text-3xl md:text-4xl font-bold text-white underline decoration-[#665499] decoration-4'>
         About Me
       </div>
     </div>
