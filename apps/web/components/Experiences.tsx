@@ -49,7 +49,7 @@ function Experiences() {
   return (
     <div className="min-h-screen px-4 sm:px-6 lg:px-8 py-8">
       <div className='flex flex-col items-center mb-8 lg:mb-16'>
-        <div className='text-2xl sm:text-3xl font-bold text-white underline decoration-[#665499] decoration-4 text-center mb-8 lg:mb-16'>
+        <div className='text-2xl sm:text-3xl font-bold text-white underline decoration-[#665499] decoration-4 text-center mb-8 lg:mb-16 mt-10'>
           Contributions Graph
         </div>
         <div className="w-full max-w-4xl overflow-x-auto">
