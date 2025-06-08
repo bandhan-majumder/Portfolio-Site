@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import Image from 'next/image'
 import GitHubCalendar from 'react-github-calendar'
@@ -58,9 +56,6 @@ function Experiences() {
           <div className="min-w-[600px] flex justify-center">
             <GitHubCalendar
               username="bandhan-majumder"
-              blockSize={window.innerWidth < 640 ? 10 : 15}
-              blockMargin={window.innerWidth < 640 ? 3 : 5}
-              fontSize={window.innerWidth < 640 ? 12 : 16}
               showWeekdayLabels={true}
               hideColorLegend={true}
               colorScheme='dark'
