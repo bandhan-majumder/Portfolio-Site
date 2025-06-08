@@ -7,7 +7,7 @@ const nextConfig = {
         authInterrupts: true,
     },
     images: {
-        domains: ["i.ibb.co"],
+        domains: ["i.ibb.co","pexels.com","openai.com"],
     },
     webpack: (config, { isServer }) => {
         if (isServer) {
