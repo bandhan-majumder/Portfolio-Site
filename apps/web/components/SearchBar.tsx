@@ -8,6 +8,7 @@ import Link from 'next/link';
 // Type definitions
 interface SearchItem {
   id: number;
+  notionDocsId: string;
   title: string;
   description: string;
 }
@@ -49,7 +50,6 @@ const GoogleSearchBar: React.FC = () => {
       if (term.trim() === '') {
         setSearchResults([])
       } else if (blogsData?.allBlogs) {
-        console.log('blogsData: ', blogsData?.allBlogs);
         //@ts-ignore
         const results: BlogsResponse = blogsData.allBlogs.filter((item: SearchItem) =>
           item.title.toLowerCase().includes(term.toLowerCase()) ||
@@ -59,14 +59,13 @@ const GoogleSearchBar: React.FC = () => {
         setSearchResults(results)
       }
     }, 300),
-    [blogsData?.allBlogs], // Add blogsData as dependency
+    [blogsData?.allBlogs], 
   )
 
   useEffect(() => {
     handleSearch(searchTerm)
   }, [searchTerm, handleSearch])
 
-  // Event handlers with proper typing
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setSearchTerm(e.target.value)
   }
@@ -74,12 +73,6 @@ const GoogleSearchBar: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault()
     // You can add additional submit logic here if needed
-  }
-
-  const handleVoiceSearch = (): void => {
-    alert(
-      'Voice search is unsupported in this demo.\nTry implementing this feature yourself 🙂',
-    )
   }
 
   // Handle loading and error states
@@ -117,14 +110,6 @@ const GoogleSearchBar: React.FC = () => {
             />
             <div className="absolute right-0 top-0 mr-4 mt-3 flex items-center">
               <button
-                type="button"
-                className="mr-3 text-gray-400 hover:text-gray-600"
-                onClick={handleVoiceSearch}
-                aria-label="Voice search"
-              >
-                {/* Voice search icon would go here */}
-              </button>
-              <button
                 type="submit"
                 className="text-blue-500 hover:text-blue-600"
                 aria-label="Search"
@@ -135,14 +120,13 @@ const GoogleSearchBar: React.FC = () => {
           </div>
         </form>
 
-        {/* Search Results Overlay */}
         {searchResults.length > 0 && (
           <div className="absolute top-full left-0 right-0 mt-2 rounded-lg bg-[#1C1C1C] text-white p-4 shadow-lg z-50 max-h-96 overflow-y-auto">
             <h2 className="mb-4 text-xl font-bold">Search Results:</h2>
             <ul>
               {searchResults.map((result: SearchItem) => (
                 <li key={result.id} className="mb-2">
-                  <Link href={`/blog/${result.id}`} className="text-blue-500 hover:underline">
+                  <Link href={`/blog/${result.notionDocsId}`} className="text-blue-500 hover:underline">
                     <div className="font-medium">{result.title}</div>
                     {result.description && (
                       <div className="text-sm text-gray-300 mt-1">

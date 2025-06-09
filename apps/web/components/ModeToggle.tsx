@@ -15,11 +15,8 @@ export function ModeToggle() {
 
   if (!mounted) return null;
 
-  console.log("mode is: ", theme)
   const isDarkMode =
     theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-  console.log("current dark mode is: ", isDarkMode);
 
   const renderToggle = () => (
     <div className="flex items-center gap-2">

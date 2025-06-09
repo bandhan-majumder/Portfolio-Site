@@ -46,8 +46,7 @@ export async function getAllBlogs({
         return cachedData;
     }
         */
-    
-    console.log("Fetching all blogs with params:", { take, skip, cursor, orderBy });
+       
     try {
         const totalCount = await db.blogs.count();
         const allBlogs = await db.blogs.findMany({
