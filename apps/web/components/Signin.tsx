@@ -4,8 +4,18 @@ import { useRouter } from "next/navigation";
 const Signin = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-[40vh]">
       <div className="flex flex-col gap-12">
+        <div>
+          <div className="text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-gray-200">
+            Welcome to {' '}
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-bold text-center text-[#7A4D44]">
+              Bandhan's site
+            </div>
+          </div>
+        </div>
         <div className="flex flex-col gap-4">
           <div
             className="w-full flex gap-2 p-4 font-medium md:text-lg rounded-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer bg-[#7A4D44] text-white justify-center items-center"
