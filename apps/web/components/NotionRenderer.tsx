@@ -9,7 +9,7 @@ export const BlogRender = ({ recordMap }: { recordMap: any }) => {
   return (
     <NotionRendererLib
       bodyClassName="text-base sm:text-lg"
-      className={"dark:!bg-[#292828]"}
+      className={"!bg-[#292828]"}
       darkMode={!isDarkMode}
       disableHeader
       fullPage
