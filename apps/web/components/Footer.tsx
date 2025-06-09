@@ -2,8 +2,8 @@
 
 import { Mail, Copy, Twitter, Linkedin, Github } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { handleCopyEmail } from "../lib/copyClipBoard";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
 
@@ -34,6 +34,7 @@ const Footer = () => {
 
         <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-800 pt-4 gap-3">
           <div className="flex gap-4 mb-2 sm:mb-0 order-1 sm:order-1">
+            <Link href={"https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=bandhanmajumder16@gmail.com"} target='_blank'><MdEmail size={26} /></Link>
             <Link target="_blank" href="https://x.com/MEbandhan" className="hover:text-gray-300 text-sm sm:text-base">
               <Twitter />
             </Link>
@@ -53,10 +54,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-auto flex items-center justify-center overflow-hidden">
-       <div className="w-full h-auto flex items-center justify-center overflow-hidden px-2">
-      <div className="text-center my-5 w-full">
-        <h1
-          className="
+        <div className="w-full h-auto flex items-center justify-center overflow-hidden px-2">
+          <div className="text-center my-5 w-full">
+            <h1
+              className="
             text-[4rem] 
             xs:text-[5rem] 
             sm:text-[6rem] 
@@ -73,16 +74,16 @@ const Footer = () => {
             break-all
             sm:break-normal
           "
-          style={{
-            color: 'transparent',
-            WebkitTextStroke: '1px rgba(255, 255, 255, 0.1)',
-          }}
-        >
-          bandhan
-        </h1>
+              style={{
+                color: 'transparent',
+                WebkitTextStroke: '1px rgba(255, 255, 255, 0.1)',
+              }}
+            >
+              bandhan
+            </h1>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </footer>
   );
 };

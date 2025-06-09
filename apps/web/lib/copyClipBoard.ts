@@ -1,7 +1,7 @@
 import toast from "react-hot-toast";
 
 export const handleCopyEmail = () => {
-    const email = "hello@studioalphonse.com";
+    const email = "bandhanmajumder16@gmail.com";
     
     // First try the modern Clipboard API
     if (navigator.clipboard && window.isSecureContext) {
