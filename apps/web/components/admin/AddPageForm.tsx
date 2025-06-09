@@ -191,7 +191,7 @@ export function PageForm({
               <FormItem>
                 <FormLabel>Notion Doc ID</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter Notion Doc ID" {...field} className="text-gray-600" />
+                  <Input placeholder="Enter Notion Doc ID" {...field} className="text-white" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -209,7 +209,7 @@ export function PageForm({
                   <FormItem>
                     <FormLabel>{isEditing ? "Title (optional)" : "Title"}</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter title" {...field} className="text-gray-600" />
+                      <Input placeholder="Enter title" {...field} className="text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -225,7 +225,7 @@ export function PageForm({
                   <FormItem>
                     <FormLabel>{isEditing ? "Description (optional)" : "Description"}</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter description" {...field} className="text-gray-600" />
+                      <Input placeholder="Enter description" {...field} className="text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -241,7 +241,7 @@ export function PageForm({
                   <FormItem>
                     <FormLabel>Thumbnail Image URL (optional)</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter image URL" {...field} className="text-gray-600" />
+                      <Input placeholder="Enter image URL" {...field} className="text-white" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

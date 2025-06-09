@@ -87,7 +87,7 @@ const GoogleSearchBar: React.FC = () => {
     return (
       <div className="flex h-auto flex-col items-center p-4">
         <div className="w-full max-w-2xl mb-8">
-          <div className="text-center text-gray-500">Loading blogs...</div>
+          <div className="text-center text-gray-500">Loading Search Bar...</div>
         </div>
       </div>
     )
@@ -112,7 +112,7 @@ const GoogleSearchBar: React.FC = () => {
               type="text"
               value={searchTerm}
               onChange={handleInputChange}
-              className="w-full rounded-full border border-gray-200 px-5 py-3 pr-20 text-base shadow-md transition-shadow duration-200 hover:shadow-lg focus:border-gray-300 focus:outline-none bg-[#1C1C1C]"
+              className="w-full rounded-full border border-gray-200 px-5 py-3 pr-20 text-base shadow-md transition-shadow duration-200 hover:shadow-lg focus:border-gray-300 focus:outline-none"
               placeholder="search blogs.."
             />
             <div className="absolute right-0 top-0 mr-4 mt-3 flex items-center">
