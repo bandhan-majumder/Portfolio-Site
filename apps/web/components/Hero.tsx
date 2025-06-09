@@ -11,7 +11,7 @@ export default function Hero() {
                         <div className="font-mono">
                             <p className="text-center text-4xl md:text-7xl text-[#7A4D44] font-semibold tracking-tighter">Bandhan Majumder</p>
                             <div className="text-gray-400 text-xl md:text-xl font-mono mt-4 text-center tracking-tighter">
-                                <p>Computer science enthusiast</p>
+                                <p>Computer science enthusiast.</p>
                                 <p>Love contributing to open source.</p>
                                 <p>Play chess & write Blogs!</p>
                             </div>
