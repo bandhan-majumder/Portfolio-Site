@@ -10,7 +10,7 @@ function BlogHighlight({ id, title, description, image, createdAt }: {
   image: string;
   createdAt?: string;
 }) {
-  const [imageURL, setImageURL] = useState<string>("https://i.ibb.co/r2ncvW98/assets-task-01jx80btkjfc184dmmsmb58t5w-1749394323-img-1.webp");
+  const [imageURL, setImageURL] = useState<string>("https://i.ibb.co/Df8XfYjK/loading-image.webp");
 
   useEffect(() => {
     const validateImage = async () => {
@@ -23,7 +23,9 @@ function BlogHighlight({ id, title, description, image, createdAt }: {
         } catch (error) {
           console.error("Error validating image:", error);
         }
+        return;
       }
+      setImageURL("https://i.ibb.co/r2ncvW98/assets-task-01jx80btkjfc184dmmsmb58t5w-1749394323-img-1.webp"); // default image if the provided image is invalid or empty
     };
     validateImage();
   }, [image]);
