@@ -6,7 +6,7 @@ import SearchBar from '../../components/SearchBar'
 function page() {
     return (
         <div className='w-full h-full'>
-            <div className='text-[#737881] text-xl text-center mt-10 mx-auto'>
+            <div className='text-[#9AA1AD] text-xl text-center mt-10 mx-auto'>
                 <p>I write blogs about various topics.</p>
                 <p>This includes the things I learn, explore and find exciting.</p>
                 <p>Subscribe to my newsletter below to get updated blogs message!</p>
