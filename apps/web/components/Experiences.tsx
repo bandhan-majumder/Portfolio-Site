@@ -21,7 +21,7 @@ function Experiences() {
       company: "Vozi",
       role: "Software Engineer Intern",
       timeline: "Nov 2024 - Present",
-      description: "I have been developing multiple Nextjs applications both as monorepo and single repos. I have also been building mobile applications with React Native. I have built Whatsapp Bot for booking tickets.",
+      description: "Working with Next.js, ShadCN, Docker, Turbo repo and coolify. Building management dashboards, react-native applications and solving day to day challenges. Integrating swagger apis with frontend with tanstack and ofetch. I have also worked with redis for caching and improving performance of a whatsapp ticket booking bot.",
       img: "/vozi.png",
       stack: "Turbo repo, Nextjs, Docker, Nest, React Native, Tanstack Query, Redis, React, Tailwind, ShadCN",
       contriLinks: [{
