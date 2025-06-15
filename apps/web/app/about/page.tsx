@@ -22,7 +22,7 @@ function Page() {
         </div>
         <div className='max-w-[600px] text-center md:text-left'>
           <p className='text-lg md:text-xl text-white'>
-            Hi, I'm Bandhan Majumder. I drive by curiosity in computer science. In the vast area, I have been currently exploring Full Stack and Cloud technologies.
+            Hi, I'm Bandhan Majumder. I am driven by curiosity in computer science. In the vast area, I have been currently exploring Full Stack and Cloud technologies.
           </p>
           <p className='mt-4 text-lg md:text-xl text-white'>
             I like to implement stuffs via building or contributing to open source projects. I love the community of open source. The mentorship, the collaboration, and the learning opportunities are invaluable.
