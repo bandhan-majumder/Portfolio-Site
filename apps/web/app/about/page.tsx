@@ -48,7 +48,7 @@ function Page() {
             </a>
           </p>
           <p className='mt-4 text-lg md:text-xl text-white'>
-          I write blogs. You can find my blogs on{' '}
+          I write blogs. You can find my blogs{' '}
             <Link
               href="/blog"
               target="_blank"
