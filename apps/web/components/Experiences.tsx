@@ -9,13 +9,25 @@ function Experiences() {
       company: "Cdxgen",
       role: "Infrastructure Engineer",
       timeline: "June 2025 - Present",
-      description: "Working on the CycloneDX Generator (cdxgen). Contributing and learning about infrastructure engineering daily with the guidance of awesome mentor(s).",
+      description: "Working on the CycloneDX Generator (cdxgen). Contributing and learning about infrastructure engineering daily with the guidance of awesome mentor(s). Testing APIs with swagger, writing Dockerfiles for multiple languages and distros, helping setup devenv with nix and solving day to day challenges.",
       img: "/cdxgen.png",
       stack: "Infrastructure Engineering, CycloneDX",
       contriLinks: [{
         link: "https://github.com/CycloneDX/cdxgen/pulls?q=is%3Apr+author%3Abandhan-majumder+is%3Aclosed",
         text: "View my contributions"
-      }] 
+      }]
+    },
+    {
+      company: "OWASP Nest",
+      role: "Open Source Contributor",
+      timeline: "June 2025 - Present",
+      description: "Working on the project Nest. Helping with the unit test and code coverage. Learning django and pytest on the go. Learning about django in built modules support. Focusing on the core development too.",
+      img: "/owasp-nest.png",
+      stack: "Python, Django, Pytest",
+      contriLinks: [{
+        link: "https://github.com/OWASP/Nest/pulls?q=is%3Apr+author%3Abandhan-majumder+is%3Aclosed",
+        text: "View my contributions"
+      }]
     },
     {
       company: "Vozi",
